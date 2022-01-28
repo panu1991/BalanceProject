@@ -10,7 +10,7 @@ function Item(props) { //สร้างตัวแปร props เป็น Pr
         return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
     }
     return (
-        <><li className={status}>{title} <span>{symbol}{formatNumber(Math.abs(amount))}</span> </li> // Math.abs ทำให้ ค่าที่เป็นลบเป็นลบเสมอ</>
+        <li className={status}>{title} <span>{symbol}{formatNumber(Math.abs(amount))}</span> </li> // Math.abs ทำให้ ค่าที่เป็นลบเป็นลบเสมอ
         
     )
 }
