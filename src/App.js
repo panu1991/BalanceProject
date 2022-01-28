@@ -1,7 +1,7 @@
 import Transactions from "./component/Transation";
 import './App.css'
 import FormComponent from "./component/FormComponent";
-import { useState, useEffect, useReducer } from "react";
+import { useState, useEffect } from "react";
 import DataContext from "./data/DataContext"; 
 import ReportComponent from "./component/ReportComponent";
 import { BrowserRouter as Rounter, Switch, Route, Link } from "react-router-dom";
@@ -66,6 +66,7 @@ function App() {
               </Route>
             </Switch>
           </div>
+          <></>
         </Rounter>
         {/* <p>{result}</p>
         <button onClick={() => dispath({ type: "SHOW" })}>แสดง</button>
